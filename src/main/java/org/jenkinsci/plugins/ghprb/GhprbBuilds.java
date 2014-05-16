@@ -130,8 +130,8 @@ public class GhprbBuilds {
                     logger.log(Level.WARNING, "Can't add log excerpt to commit comments", ex);
                 }
             }
-
-            repo.addComment(c.getPullID(), msg.toString());
+            // stopping this madness for now :-S
+            // repo.addComment(c.getPullID(), msg.toString());
         }
 
         // close failed pull request automatically

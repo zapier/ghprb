@@ -145,11 +145,14 @@ public class GhprbRepository {
     public void addComment(int id, String comment) {
         if (comment.trim().isEmpty())
             return;
+        /*
         try {
             ghRepository.getPullRequest(id).comment(comment);
         } catch (IOException ex) {
             logger.log(Level.SEVERE, "Couldn't add comment to pull request #" + id + ": '" + comment + "'", ex);
         }
+        */
+        // no moar comments. period. 
     }
 
     public void closePullRequest(int id) {
